@@ -13,8 +13,8 @@
 <body>
 <div class="container">
   <div class="credit-card">
-    <img src="./images/bg-card-front.png" id="card-front">
-    <img src="./images/bg-card-back.png" id="card-back">
+    <img src="./images/bg-card-front.png" id="card-front" alt="front">
+    <img src="./images/bg-card-back.png" id="card-back" alt="back">
     <div class="card-logo">
       <img src="./images/card-logo.svg" alt="logo" id="logo">
     </div>
@@ -39,21 +39,21 @@
   </div>
     <br>
     <div class="card-number">
-    <label class="custom-label" for="card">CARD NUMBER</label><br>
+    <label class="custom-label" for="myNumberInput">CARD NUMBER</label><br>
     <input type="text" name="number" id="myNumberInput" maxlength="16"
     placeholder="e.g. 1234 5678 9123 0000" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" required>
   </div>
     <br>
     <div class="expiration-cvc">
       <div id="exp-date">
-    <label for="expiration">EXP. DATE (MM/YY)</label>
+    <label for="month year">EXP. DATE (MM/YY)</label>
     <div class="input-container">
     <input type="text" name="month" id="month" placeholder="MM" maxlength="2" required>
     <input type="text" name="year" id="year" placeholder="YY" maxlength="2" required>
   </div>
   </div>
   <div class="input-container-cvc">
-    <label for="credit-card-cvc" id="c-v-c">CVC</label>
+    <label for="cvc" id="c-v-c">CVC</label>
     <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" maxlength="3" required>
   </div>
   
