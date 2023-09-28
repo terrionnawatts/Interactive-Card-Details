@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    max-width: 1440;
+    margin: 0 auto;
+    padding: 0;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+    margin: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+input:focus {
+    border: 1px solid hsl(249, 99%, 64%);
+    outline: none;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.input-container input {
+    margin: 5px;
+}
+
+label {
+    color: hsl(278, 68%, 11%);
+}
+
+.form {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100vh;
+    top: 36%;
+    left: 40%;
+}
+
+
+.thank-you-message {
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 36%;
+    left: 40%;
+    display: none;
+}
+
+.expiration-cvc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-cvc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#month, #year {
+    width: 60px;
+    height: 30px;
+}
+
+#cvc {
+    height: 30px;
+}
+
+#name, #myNumberInput {
+    font-size: 18px;
+    margin-left: 0;
+    width: 350px;
+    height: 30px;
+}
+
+.credit-card {
+    background-image: url('./images/bg-main-desktop.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    width: 600px;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+#card-front {
+    position: absolute;
+    top: 400px;
+    left: 300px;
+}
+
+#card-back {
+    position: absolute;
+    top: 675px;
+    left: 400px;
+}
+
+.card-logo {
+    font-size: 32px;
+    font-weight: 500px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 425px;
+    left: 325px;
+}
+
+#on-card-number {
+    font-size: 32px;
+    font-weight: 500px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 525px;
+    left: 325px;
+}
+
+#on-cardholder-name {
+    font-size: 14px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 600px;
+    left: 325px;
+}
+
+#card-month-year {
+    font-size: 14px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 600px;
+    left: 670px;
+}
+
+#on-card-cvc {
+    font-size: 14px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 785px;
+    left: 750px;
+}
+
+.confirm {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: hsl(278, 68%, 11%);
+    color: #fff;
+    font-size: 16px;
+    width: 400px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.message {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#checkmark {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+p {
+    text-align: center;
+}
+
+.continue {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: hsl(278, 68%, 11%);
+    color: #fff;
+    font-size: 16px;
+    width: 400px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 45px;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .credit-card {
+        width: 80%; 
+        margin-top: 20px;
+    }
+
+    .form-container, .thank-you-message {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+
+    .form {
+        font-size: 14px;
+    }
+}
